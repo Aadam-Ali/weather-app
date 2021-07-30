@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/weather-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn-open-search">
+        <i class="fas fa-search"></i>
+      </button>
+
+      <form class="form">
+        <input
+          type="text"
+          class="city-input"
+          placeholder="Enter City Here..."
+        />
+        <button class="btn-search" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div class="card">
+        <h1 class="city"></h1>
+        <h3 class="description"></h3>
+        <i id="weather-icon" class=""></i>
+        <h3 class="temp"></h3>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
